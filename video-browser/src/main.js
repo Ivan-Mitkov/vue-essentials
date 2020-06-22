@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App";
 
-Vue.config.productionTip = false
-
+//Create new Vue Instance
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  //identical with .$mount('#app')
+  // el: "#app",
+  render: function(createElement) {
+    return createElement(App);
+  },
+}).$mount("#app");
