@@ -12,10 +12,21 @@ export default {
     onInput: function(e) {
       // console.dir(this)
       //emit event to communicate with parent component
-      this.$emit('termChange',e.target.value)
+      this.$emit("termChange", e.target.value);
     },
   },
 };
 </script>
+// affect only this file
+<style scoped>
+input {
+  width: 75%;
+  padding: 10px 20px;
+  font-size: 20px;
+}
 
-<style></style>
+div {
+  text-align: center;
+  margin: 20px;
+}
+</style>
